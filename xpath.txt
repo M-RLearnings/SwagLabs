@@ -1,0 +1,49 @@
+1. Absolute xpath or Position xpath
+2. Attribute xpath or Relative xpath
+
+1. Absolute xpath or Position xpath
+/html[1]/body[1]/div[1]/div[2]/div[1]/div[1]/div[1]/div[1]/div[2]/form[1]/table[1]/tbody[1]/tr[2]/td[1]/input[1]
+
+2. Attribute xpath or Relative xpath
+
+a. Standard - //TagName[@attributeName='AttributeValue']  -  //input[@data-testid='royal_email']
+
+b. //*[@attributeName='AttributeValue'] - //*[@data-testid='royal_email']  - Any Tag name
+
+
+c. //TagName[@attributeName='AttributeValue' and @attributeName='AttributeValue'] - Both attributes should present
+//TagName[@attributeName='AttributeValue' or @attributeName='AttributeValue']  - Either should present
+
+
+d. When your entire xpath giving you more than one matching nodes
+(//input[@class='inputtext login_form_input_box'])[2]
+
+e. Regular expression xpath - Contains, Starts-with
+//div[contains(@id,'js_')]   - id="abcjs_sdfd'
+//div[starts-with(@id,'js_')] - id="js_sdfd'
+
+f. Mix xpath
+//div[@id='u_0_e']/div/input
+
+e. Xpath using text
+//div[contains(text(),'hello')]
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
